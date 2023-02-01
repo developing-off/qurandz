@@ -5,24 +5,24 @@ $formatter = new IntlDateFormatter('ar_DZ', IntlDateFormatter::NONE, IntlDateFor
 if (empty($_GET)) {
     include 'home.php';
 } else {
-    
-    $url = explode("/", filter_var($_GET['url'],FILTER_SANITIZE_URL));
+
+    $url = explode("/", filter_var($_GET['url'], FILTER_SANITIZE_URL));
     #var_dump($base_url,$url = explode("/", filter_var($_GET['url'],FILTER_SANITIZE_URL)));
     switch ($url[0]) {
         case "home":
             include 'home.php';
             break;
         case "surat":
-            if(isset($url[1]) && is_numeric($url[1])){
+            if (isset($url[1]) && is_numeric($url[1])) {
                 $surat = $url[1];
                 include 'quran/surat.php';
-            }else{
-                header('Location: '.$base_url);
+            } else {
+                header('Location: ' . $base_url);
             }
-        break;
+            break;
         case "kitab":
             include 'quran/kitab.php';
-        break;
+            break;
         case "about":
             include 'about.php';
             break;
