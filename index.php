@@ -20,6 +20,9 @@ if (empty($_GET)) {
                 header('Location: '.$base_url);
             }
         break;
+        case "kitab":
+            include 'quran/kitab.php';
+        break;
         case "about":
             include 'about.php';
             break;
@@ -27,7 +30,7 @@ if (empty($_GET)) {
             include 'contact.php';
             break;
         default:
-            include '404.php';
+            include 'errors/404.php';
             break;
     }
 }

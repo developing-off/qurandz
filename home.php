@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 
 <head>
- 
+
   <?php require('partials/_head.php') ?>
 </head>
 
@@ -35,7 +35,7 @@
       <div class="container">
         <div class="row mt-50 align-items-end">
           <div class="col-lg-8 col-md-8">
-            <h2 class="color-brand-2 mb-20">سورات القرآن الكريم</h2>
+            <h2 class="color-brand-2 mb-20">سور القرآن الكريم</h2>
           </div>
         </div>
         <div class="row mt-50">
@@ -45,33 +45,15 @@
     </section>
     <!-- hadiths -->
     <?php require('function/hadith/hadith_show.php') ?>
-    <!-- <section class="section mt-50">
+    <section class="section mt-50">
       <div class="container">
         <div class="box-newsletter">
-          <div class="row align-items-center">
-            <div class="col-lg-5 col-md-12">
-              <div class="box-image-newsletter"> <img class="img-main" src="assets/imgs/template/newsletter_img.png" alt="iori">
-                <div class="shape-2 image-1"> <img src="assets/imgs/template/newsletter_finger.png" alt="iori"></div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12"><span class="font-lg color-brand-1">Newsletter</span>
-              <h2 class="color-brand-1 mb-15 mt-5">Subcribe our newsletter</h2>
-              <p class="font-md color-grey-500">By clicking the button, you are agreeing with our Term & Conditions</p>
-              <div class="form-newsletter mt-30">
-                <form action="#">
-                  <input type="text" placeholder="Enter you mail ..">
-                  <button class="btn btn-submit-newsletter" type="submit">
-                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
+          <h4 class="color-brand-1 mb-15 mt-5">نسأل الله كل من أعجب بهذا الموقع أن يدعو لكل من قام بهذا العمل المبارك بالإخلاص التام والنية الصادقة مع الله تعالى وأن يتقبل الله تعالى هذا العمل ويكون الموقع سببا لمن اهتدى.</h4>
         </div>
       </div>
-    </section> -->
+      </div>
+      </div>
+    </section>
   </main>
   <?php require('partials/_footer.php') ?>
   <script>

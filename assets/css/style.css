@@ -1,31 +1,3 @@
-/***
- Theme Name: iori
- Description: Multipurpose Startup & SaaS HTML Template
- Version: 1.0
- License: GNU General Public License v2 or later
- License URI: http://www.gnu.org/licenses/gpl-2.0.html
-==============================
-TABLE CONTENT
- Import Google Fonts
- Include Third Party CSS Library
- GENERAL
- HEADER
- Offcanvas Sidebar
- Search form
- Main header
- Mega menu
- Header layouts
- Page layouts
- Pagination
- Breadcrumb
- CATEGORY PAGES
- SINGLE POST
- Author box
- comment
- Post share social
- WP STYPE
- Custom amine
-***/
 @import url(../../../../../css);
 /*import vendors*/
 @import url(vendors/normalize.css);
@@ -133,12 +105,62 @@ video {
   font-size: 100%;
   vertical-align: baseline;
 }
+.info-place {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
 
+.info-place .btn-time {
+  padding: 10px;
+  color: #fff;
+  background-color: var(--brand-1);
+  margin-top: auto;
+  height: 42px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.info-place .place select {
+  width: 150px;
+  height: 42px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.table-forum thead th {
+  background-color: #FFE7BB !important;
+
+}
+
+.table-forum tbody tr td {
+  border: 1px solid #FFE7BB !important;
+  direction: rtl;
+  padding-left: 34px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+}
+
+.table-forum tbody tr td:first-child {
+  text-align: left;
+  padding: 10px;
+}
+
+.mawaqit {
+  display: none;
+}
 main {
   display: block;
   clear: both;
 }
-
+:root  {
+  --brand-1 : #024430;
+}
 thead {
   font-weight: 600;
 }
@@ -938,7 +960,7 @@ body {
   color: #06D6A0 !important;
 }
 .btn.btn-default:hover svg {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   transition-duration: 0.2s;
   color: #024430 !important;
 }
@@ -2050,7 +2072,7 @@ body {
   display: inline-block;
   width: 100%;
   padding: 20px;
-  border: 1px solid #CDE2E7;
+  border: 1px solid #024430;
   margin-bottom: 30px;
 }
 .card-product .card-image {
@@ -3746,7 +3768,7 @@ body {
   right: 0px;
   height: 100px;
   width: 111px;
-  background: url(../imgs/template/newsletter_finger_top.png) no-repeat top right;
+  
   background-size: cover;
 }
 .box-newsletter .img-main {

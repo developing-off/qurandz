@@ -12,21 +12,23 @@
                 <div class="col-lg-3 width-16 mb-30">
                     <h5 class="mb-10 color-brand-1">معلومات عنا</h5>
                     <ul class="menu-footer">
-                        <li><a href="#">Developers</a></li>
-                        <li><a href="#">Our Team</a></li>
+                        <li><a href="/documentation/">Developers</a></li>
+                        <li><a href="/teams/">Our Team</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 width-16 mb-30">
                     <h5 class="mb-10 color-brand-1">Ressources</h5>
                     <ul class="menu-footer">
                         <li><a href="#">Quran Api</a></li>
+                        <li><a href="#">Sunnah Api</a></li>
+                        <li><a href="#">Aladhan Api</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 width-16 mb-30">
                     <h5 class="mb-10 color-brand-1">نحن نقدم</h5>
                     <ul class="menu-footer">
                         <li><a href="#">تلاوة القرآن</a></li>
-                        <li><a href="#">تحميل المصحف</a></li>
+                        <li><a href="/kitab/">تحميل المصحف</a></li>
                         <li><a href="#">وقت الصلاة</a></li>
                         <li><a href="#">وقت رمضان</a></li>
                     </ul>
@@ -49,9 +51,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 text-center text-lg-start">
                         <ul class="menu-bottom">
-                            <li><a class="font-sm color-grey-300" href="#">Privacy policy</a></li>
-                            <li><a class="font-sm color-grey-300" href="#">Cookies</a></li>
-                            <li><a class="font-sm color-grey-300" href="#">Terms of service</a></li>
+                            <li><a class="font-sm color-grey-300" href="/privacy/">Privacy policy</a></li>
+                            <li><a class="font-sm color-grey-300" href="/terms/">Terms of service</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-12 text-center text-lg-end"><span class="color-grey-300 font-md"> QuranDZ 2023. All right reversed. ©</span></div>

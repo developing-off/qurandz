@@ -5,7 +5,7 @@
         <div>
           <h1 class="color-brand-1 mb-20">اول يوم من شهر رمضان:</h1>
           <center>
-            <div class="countdown d-flex mt-10 justify-content-center" data-count="2023/05/23">
+            <div class="countdown d-flex mt-10 justify-content-center" data-count="2023/03/23">
               <div class="col-3">
                 <h3>%s</h3>
                 <h4>ثواني</h4>
