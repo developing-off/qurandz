@@ -45,6 +45,8 @@
     </section>
     <!-- hadiths -->
     <?php require('function/hadith/hadith_show.php') ?>
+    <!-- adkar -->
+    <?php require('function/adkar/adkar_by_time.php') ?>
     <section class="section mt-50">
       <div class="container">
         <div class="box-newsletter">
