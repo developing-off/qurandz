@@ -1,5 +1,5 @@
 <?php require('get_all.php') ?>
-<section class="section pt-80 mb-30 ">
+<section class="section pt-80  ">
     <div class="container">
         <div class="row align-items-end">
             <div class="col-lg col-md-8">
