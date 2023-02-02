@@ -1,6 +1,7 @@
 <?php
 $base_url = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . '/';
 require_once('function/HijriDate/hijri.class.php');
+$date = "02-02-2023";
 $formatter = new IntlDateFormatter('ar_DZ', IntlDateFormatter::NONE, IntlDateFormatter::NONE, 'Africa/Algiers', IntlDateFormatter::GREGORIAN, "EEEE d MMMM y");
 if (empty($_GET)) {
     include 'home.php';
