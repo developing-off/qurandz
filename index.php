@@ -20,9 +20,6 @@ if (empty($_GET)) {
                 header('Location: ' . $base_url);
             }
             break;
-        case "hadiths":
-            include 'phadiths/hadiths.php';
-            break;
         case "kitab":
             include 'quran/kitab.php';
             break;
