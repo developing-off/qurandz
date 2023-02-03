@@ -30,6 +30,8 @@
     <?php require('partials/ramadan-day.php') ?>
     <!-- prayer time -->
     <?php require('function/prayertime/prayer_time.php') ?>
+     <!-- adkar -->
+    <?php require('function/adkar/adkar_by_time.php') ?>
     <!-- bg-brand-1 -->
     <section id="quran" class="section bg-brand-1 mt-100">
       <div class="container">
@@ -45,8 +47,7 @@
     </section>
     <!-- hadiths -->
     <?php require('function/hadith/hadith_show.php') ?>
-    <!-- adkar -->
-    <?php require('function/adkar/adkar_by_time.php') ?>
+   
     <section class="section mt-50">
       <div class="container">
         <div class="box-newsletter">

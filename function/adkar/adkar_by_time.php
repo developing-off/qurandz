@@ -1,5 +1,6 @@
 <?php require('get_adkar.php') ?>
 <section class="section ">
+<div class="border-bottom"></div>
     <div class="container">
         <div class="row align-items-end">
             <div class="col-lg col-md-8">
@@ -33,5 +34,5 @@
         </div>
     </div>
 
-    <div class="border-bottom"></div>
+   
 </section>
