@@ -4,7 +4,7 @@ $data = json_decode($json, true);
 
 
 $hour = date("G");
-$hour = 8;
+
 if ($hour >= 6 && $hour < 12) {
   $category = 'أذكار الصباح';
 } else {
