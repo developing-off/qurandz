@@ -23,11 +23,8 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-
         $data = json_decode($response);
         $collections = $data->data;
-      
-   
-
     #var_dump($collections[0]->name);
 }
+?>

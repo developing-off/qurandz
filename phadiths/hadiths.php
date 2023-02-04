@@ -1,5 +1,5 @@
 <?php
-require_once('get_all_hadiths.php');
+require_once('function/hadith/get_collection_all.php');
 
 ?>
 
@@ -38,7 +38,7 @@ require_once('get_all_hadiths.php');
             <a href="hadiths/<?= $collection->name ?>">
               <div class="card-small">
                 <div class="card-image">
-                  <div class="box-image"><?= $collection->collection[1]->title ?></div>
+                  <div class="box-image"><h6 class="color-brand-1 icon-up" dir="ltr"><?= $collection->collection[1]->title ?></h6></div>
                 </div>
                 <div class="card-info">
                   <h6 class="color-brand-1 icon-up" dir="ltr"><?= $collection->collection[0]->title ?></h6>

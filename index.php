@@ -21,7 +21,12 @@ if (empty($_GET)) {
             }
             break;
         case "hadiths":
-            include 'phadiths/hadiths.php';
+            if (isset($url[1]) && !empty($url[1])) {
+                $collection_name = $url[1];
+                include 'phadiths/hadith_collection.php';
+            } else {
+                include 'phadiths/hadiths.php';
+            }
             break;
         case "kitab":
             include 'quran/kitab.php';
