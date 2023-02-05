@@ -33,6 +33,11 @@ require_once('function/hadith/get_collection_all.php');
     <section class="section mt-100">
       <div class="container">
         <div class="row">
+        <div class="row text-center">
+                        <div class="col-lg-12 col-md-12">
+                            <h2 class="color-brand-1 mb-20">أحاديث الرسول صلى الله عليه وسلم بين يديك</h2>
+                        </div>
+                    </div>
         <?php foreach ($collections as $collection) { ?>
           <div class="col-lg-6 col-md-4 col-sm-6 col-12">
             <a href="hadiths/<?= $collection->name ?>">

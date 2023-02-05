@@ -51,12 +51,10 @@ require_once('function/hadith/get_book_by_id_name.php');
                                     ?>
 
                                     <div class="col-6 card-image">
-                                 
                                         <div class="box-image">
-                                            <h6 class="color-brand-1 icon-up" dir="rtl">
+                                            <h6 class="color-brand-1 icon-up" style="line-height: 30px;" dir="rtl">
                                             <?= $collection->hadith[1]->body ?>
                                             </h6>
-
                                         </div>
                                     </div>
                                     <div class="col-6 card-image">
