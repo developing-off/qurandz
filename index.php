@@ -21,10 +21,14 @@ if (empty($_GET)) {
             }
             break;
         case "hadiths":
-            if (isset($url[1]) && !empty($url[1])) {
+            if (isset($url[1]) && !empty($url[1]) && isset($url[2]) && !empty($url[2])) {
+                $collection_name = $url[1];
+                $book_number = $url[2];  
+                include 'phadiths/hadith_book.php';
+            }elseif(isset($url[1]) && !empty($url[1])){
                 $collection_name = $url[1];
                 include 'phadiths/hadith_collection.php';
-            } else {
+            }else{
                 include 'phadiths/hadiths.php';
             }
             break;
