@@ -39,6 +39,7 @@
                         <div class="mt-20">
                             <a class="mr-10" href="#"><img src="assets/imgs/template/appstore.png" alt="qurandz app ios"></a>
                             <a href="#"><img src="assets/imgs/template/google-play.png" alt="qurandz app android"></a>
+                            <a  href="#"><img width="60%" src="assets/imgs/template/windows.png" alt="qurandz app windows"></a>
                         </div>
                     </div>
                 </div>

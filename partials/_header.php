@@ -8,7 +8,7 @@
                         <ul class="main-menu">
                             <li><a href="home">الصفحة الرئيسية</a></li>
                             <li><a href="#mawaqit">مواقيت صلاة</a></li>
-                            <li><a href="#quran">سورات القرآن</a></li>
+                            <li><a href="#quran">سور القرآن</a></li>
                             <li><a href="#about-us">معلومات عنا</a></li>
                             <li class="has-children"><a href="#">مزيد</a>
                                 <ul class="sub-menu">
@@ -40,7 +40,7 @@
                                 <ul class="mobile-menu font-heading">
                                     <li><a href="home">الصفحة الرئيسية</a></li>
                                     <li><a href="#mawaqit">مواقيت صلاة</a></li>
-                                    <li><a href="#quran">سورات القرآن</a></li>
+                                    <li><a href="#quran">سور القرآن</a></li>
                                     <li><a href="#about-us">معلومات عنا</a></li>
                                     <li class="has-children" dir="rtl"><a href="#">مزيد</a>
                                         <ul class="sub-menu">
