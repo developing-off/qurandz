@@ -47,28 +47,35 @@ function trad_reciters($reciter_name)
             <?php
             $i = 0;
             foreach ($reciters as $reciter) {
-            ?>
+                ?>
                 <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="card-offer hover-up">
                         <div class="card-info">
-                            <h4 class="color-brand-2 mb-5" style="font-size: 18px;">القارئ: <?php trad_reciters($reciter['name']); ?></h4>
-                            <p class="font-md color-white mb-5">قراءة: <?php if ($reciter['qirat']['name'] === "Hafs") {
-                                                                            echo 'حفص';
-                                                                        } ?></p>
+                            <h4 class="color-brand-2 mb-5" style="font-size: 18px;">القارئ:
+                                <?php trad_reciters($reciter['name']); ?>
+                            </h4>
+                            <p class="font-md color-white mb-5">قراءة:
+                                <?php if ($reciter['qirat']['name'] === "Hafs") {
+                                    echo 'حفص';
+                                } ?>
+                            </p>
                             <div class="box-button-offer">
                                 <?php
                                 $url_reciter_audio = "https://api.quran.com/api/v4/chapter_recitations/" . $reciter['id'] . "/$id";
                                 $json = file_get_contents($url_reciter_audio);
                                 $reciters_audio = json_decode($json, TRUE);
                                 ?>
-                                <audio id="audioPlayer<?= $i ?>" src="<?= $reciters_audio['audio_file']['audio_url'] ?>"></audio>
-                                <button id="playPauseButton<?= $i ?>" class="btn btn-default font-sm-bold pl-0 color-brand-2"> <i style="font-size: 30px;" class="fa-solid fa-play"></i>
+                                <audio id="audioPlayer<?= $i ?>"
+                                    src="<?= $reciters_audio['audio_file']['audio_url'] ?>"></audio>
+                                <button id="playPauseButton<?= $i ?>"
+                                    class="btn btn-default font-sm-bold pl-0 color-brand-2"> <i style="font-size: 30px;"
+                                        class="fa-solid fa-play"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            <?php
+                <?php
                 $i++;
             }
             ?>
@@ -77,48 +84,31 @@ function trad_reciters($reciter_name)
 </section>
 
 <script>
-    var audioPlayers = [
-        document.getElementById("audioPlayer0"),
-        document.getElementById("audioPlayer1"),
-        document.getElementById("audioPlayer2"),
-        document.getElementById("audioPlayer3"),
-        document.getElementById("audioPlayer4"),
-        document.getElementById("audioPlayer5"),
-        document.getElementById("audioPlayer6"),
-        document.getElementById("audioPlayer7"),
-        document.getElementById("audioPlayer8"),
-        document.getElementById("audioPlayer9"),
-        document.getElementById("audioPlayer10"),
-        document.getElementById("audioPlayer11"),
-        document.getElementById("audioPlayer12"),
-    ];
-    var playPauseButtons = [
-        document.getElementById("playPauseButton0"),
-        document.getElementById("playPauseButton1"),
-        document.getElementById("playPauseButton2"),
-        document.getElementById("playPauseButton3"),
-        document.getElementById("playPauseButton4"),
-        document.getElementById("playPauseButton5"),
-        document.getElementById("playPauseButton6"),
-        document.getElementById("playPauseButton7"),
-        document.getElementById("playPauseButton8"),
-        document.getElementById("playPauseButton9"),
-        document.getElementById("playPauseButton10"),
-        document.getElementById("playPauseButton11"),
-        document.getElementById("playPauseButton12"),
-    ];
-
-    for (var i = 0; i < playPauseButtons.length; i++) {
-        playPauseButtons[i].addEventListener("click", function(i) {
-            return function() {
-                if (audioPlayers[i].paused) {
-                    audioPlayers[i].play();
-                    playPauseButtons[i].innerHTML = "<i style='font-size: 30px;' class='fa-solid fa-pause'></i>";
-                } else {
-                    audioPlayers[i].pause();
-                    playPauseButtons[i].innerHTML = "<i style='font-size: 30px;' class='fa-solid fa-play'></i>";
-                }
-            }
-        }(i));
+    var audioPlayers = [], playPauseButtons = [];
+    for(var i = 0; i < 12; i++) {
+        audioPlayers.push(document.getElementById("audioPlayer" + i));
+        playPauseButtons.push(document.getElementById("playPauseButton" + i));
     }
+    for(var i = 0; i < playPauseButtons.length; i++) {
+        if(playPauseButtons[i]) {
+            playPauseButtons[i].addEventListener("click", function (i) {
+                return function () {
+                    if(audioPlayers[i].paused) {
+                        audioPlayers[i].play();
+                        for(var j = 0; j < audioPlayers.length; j++) {
+                            if(j !== i && !audioPlayers[j].paused) {
+                                audioPlayers[j].pause();
+                                playPauseButtons[j].innerHTML = "<i style='font-size: 30px;' class='fa-solid fa-play'></i>";
+                            }
+                        }
+                        playPauseButtons[i].innerHTML = "<i style='font-size: 30px;' class='fa-solid fa-pause'></i>";
+                    } else {
+                        audioPlayers[i].pause();
+                        playPauseButtons[i].innerHTML = "<i style='font-size: 30px;' class='fa-solid fa-play'></i>";
+                    }
+                }
+            }(i));
+        }
+    }
+
 </script>
