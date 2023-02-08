@@ -65,12 +65,19 @@ function trad_reciters($reciter_name)
                                 $json = file_get_contents($url_reciter_audio);
                                 $reciters_audio = json_decode($json, TRUE);
                                 ?>
+                                
                                 <audio id="audioPlayer<?= $i ?>"
                                     src="<?= $reciters_audio['audio_file']['audio_url'] ?>"></audio>
                                 <button id="playPauseButton<?= $i ?>"
                                     class="btn btn-default font-sm-bold pl-0 color-brand-2"> <i style="font-size: 30px;"
                                         class="fa-solid fa-play"></i>
                                 </button>
+                                <a download="<?= $reciters_audio['audio_file']['audio_url'] ?>" href="<?= $reciters_audio['audio_file']['audio_url'] ?>">
+                                <button 
+                                    class="btn btn-default font-sm-bold pl-0 color-white"> <i style="font-size: 20px;"
+                                        class="fa-solid fa-download"></i>
+                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
