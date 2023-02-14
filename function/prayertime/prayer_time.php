@@ -12,40 +12,18 @@ require 'get_prayer_time.php';
                         الصَّلَاةَ فَاذْكُرُوا اللَّهَ قِيَامًا وَقُعُودًا وَعَلَىٰ جُنُوبِكُمْ ۚ فَإِذَا
                         اطْمَأْنَنْتُمْ فَأَقِيمُوا الصَّلَاةَ ۚ إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا
                         مَوْقُوتًا "</h5>
-                    <!--   <form method="GET">
-                        <div class="box-form-contact">
-                            <div class="row">
-                                <?php #require('get_country_time.php') ?>
-                                <div class="info-place">
-                                    <div class="place country">
-                                        <h3>البلد</h3>
-                                        <select id="country">
-                                            <?php #$options ?>
-                                        </select>
-                                    </div>
-                                    <div class="place wilaya">
-                                        <h3>الولاية</h3>
-                                        <select id="wilaya">
-                                            <option>Algerie</option>
-                                        </select>
-                                    </div>
-                                
-                                    <div class="btn-time btn">
-                                        تحديد مواقيت الصلاة
-                                    </div>
-                                </div>
-                                <div class="show-info">
-                                    <p class="info-place">مواقيت الصلاة في ولاية <span
-                                            class="wilaya-select">.....</span>
-                                        بــ <span class="country-select">.....</span></p>
-                                    <p class="info-date">بتاريخ <span class="date-miladi">.....</span> الموافق ل <span
-                                            class="date-hijri">.....</span></p>
-                                </div>
+
+                    <div class="box-form-contact">
+                        <div class="row">
+                            <div class="show-info">
+                                <p class="info-place">مواقيت الصلاة في ولاية <span class="wilaya-select">وهران</span>
+                                    بــ <span class="country-select">الجزائر</span></p>
                             </div>
                         </div>
-                    </form>
--->
+                    </div>
+
                 </div>
+
                 <style>
                     .times {
                         display: flex;
