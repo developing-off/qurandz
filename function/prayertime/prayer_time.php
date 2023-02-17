@@ -68,7 +68,7 @@ require 'get_prayer_time.php';
                         ?>
                         <div class="mawaqit">
                             <h5 style="text-align:center" class="color-grey-800">تاريخ :
-                                <?= str_replace("(CET)", "/", (new hijri\datetime($time["date"]["gregorian"]["date"]))->format('D _j M Y')); ?>
+                                <?= str_replace("(CET)", "/", (new hijri\datetime($time["date"]["gregorian"]["date"]))->format('D j M Y')); ?>
                             </h5>
                             <div class="times ">
                                 <div class="time">
