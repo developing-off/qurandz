@@ -10,11 +10,12 @@
                             <li><a href="#mawaqit">مواقيت صلاة</a></li>
                             <li><a href="#quran">سور القرآن</a></li>
                             <li><a href="#about-us">معلومات عنا</a></li>
-                            <li class="has-children"><a href="#">مزيد</a>
+                            <li class="has-children"><a href="#">مزيد <span class="badge bg-danger">جديد</span></a>
                                 <ul class="sub-menu">
                                     <li><a href="/kitab/">تحميل المصحف</a></li>
                                     <li><a href="/video-vertical/">تحميل فيديوهات</a></li>
                                     <li><a href="/hadiths/">الأحاديث</a></li>
+                                    <li><a href="/asmaa/">أسماء الله الحسنى</a></li>
                                 </ul>
                             </li>
                             <li><a href="#contact">اتصال</a></li>
@@ -42,11 +43,12 @@
                                     <li><a href="#mawaqit">مواقيت صلاة</a></li>
                                     <li><a href="#quran">سور القرآن</a></li>
                                     <li><a href="#about-us">معلومات عنا</a></li>
-                                    <li class="has-children" dir="rtl"><a href="#">مزيد</a>
+                                    <li class="has-children" dir="rtl"><a href="#">مزيد <span class="badge bg-danger">جديد</span></a>
                                         <ul class="sub-menu">
                                             <li><a href="/kitab/">تحميل المصحف</a></li>
                                             <li><a href="/video-vertical/">تحميل فيديوهات</a></li>
                                             <li><a href="/hadiths/">الأحاديث</a></li>
+                                            <li><a href="/asmaa/">أسماء الله الحسنى</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#contact">اتصال</a></li>

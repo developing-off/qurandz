@@ -35,6 +35,9 @@ if (empty($_GET)) {
         case "kitab":
             include 'quran/kitab.php';
             break;
+        case "asmaa":
+            include 'asmaa-husna/asmaa.php';
+            break;
         case "about":
             include 'about.php';
             break;

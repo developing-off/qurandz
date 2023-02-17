@@ -521,9 +521,9 @@ h6 {
 
 .font-lg-bold {
   font-weight: 700;
-  font-family: "Manrope", sans-serif;
-  line-height: 23px;
-  font-size: 18px;
+  font-family: "uthman_surat", sans-serif;
+  line-height: 10px;
+  font-size: 28px;
 }
 
 .font-md-bold {
@@ -3275,7 +3275,7 @@ body {
   border-bottom: none;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li.has-children .menu-expand {
-  right: 0;
+  right: -24px;
   position: absolute;
   cursor: pointer;
   z-index: 9;
