@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 width-20">
-                    <div class="mb-10"><img src="assets/imgs/logo/qurandz-logo-tra.png" alt="QuranDZ-logo"></div>
+                    <div class="mb-10"><img src="assets/imgs/logo/qurandz-logo-tra.png" width="150px" alt="QuranDZ-logo"></div>
                     <div class="mt-15">
                         <a class="icon-socials icon-facebook" href="https://www.facebook.com/qurandz.ga"></a>
                         <a class="icon-socials icon-instagram" href="https://www.instagram.com/qurandz._/"></a>
@@ -37,9 +37,9 @@
                     <h5 class="mb-10 color-brand-1">تطبيقات</h5>
                     <div>
                         <div class="mt-20">
-                            <a class="mr-10" href="#"><img src="assets/imgs/template/appstore.png" alt="qurandz app ios"></a>
-                            <a href="#"><img src="assets/imgs/template/google-play.png" alt="qurandz app android"></a>
-                            <a  href="#"><img width="60%" src="assets/imgs/template/windows.png" alt="qurandz app windows"></a>
+                            <a class="mr-10" href="#"><img width="120px" src="assets/imgs/template/appstore.png" alt="qurandz app ios"></a>
+                            <a href="#"><img width="120px" src="assets/imgs/template/google-play.png" alt="qurandz app android"></a>
+                            <a  href="#"><img width="120px" src="assets/imgs/template/windows.png" alt="qurandz app windows"></a>
                         </div>
                     </div>
                 </div>

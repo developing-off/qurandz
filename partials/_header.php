@@ -2,7 +2,7 @@
     <div class="container">
         <div class="main-header">
             <div class="header-left">
-                <div class="header-logo"><a class="d-flex" href="home"><img alt="Ecom" src="assets/imgs/logo/qurandz-logo-tra.png"></a></div>
+                <div class="header-logo"><a class="d-flex" href="home"><img  src="assets/imgs/logo/qurandz-logo-tra.png"></a></div>
                 <div class="header-nav">
                     <nav class="nav-main-menu d-none d-xl-block">
                         <ul class="main-menu">
@@ -18,7 +18,7 @@
                                     <li><a href="/asmaa/">أسماء الله الحسنى</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#contact">اتصال</a></li>
+                            <li><a href="/contact/">اتصال</a></li>
 
                         </ul>
                     </nav>
@@ -51,7 +51,7 @@
                                             <li><a href="/asmaa/">أسماء الله الحسنى</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#contact">اتصال</a></li>
+                                    <li><a href="/contact/">اتصال</a></li>
                                 </ul>
                             </nav>
                         </div>

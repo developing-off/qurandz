@@ -2754,16 +2754,16 @@ body {
   align-items: center;
   width: 100%;
 }
-.header .main-header .header-left .header-logo {
-  max-width: 100px;
-  width: 100%;
+/*.header .main-header .header-left .header-logo {
+
 }
+*/
 .header .main-header .header-left .header-logo a {
   display: block;
 }
 .header .main-header .header-left .header-logo a img {
-  max-height: 107px;
   padding-right: 51px;
+  width: 110px;
 }
 .header .main-header .header-left .header-nav {
   display: inline-block;
@@ -7479,28 +7479,28 @@ textarea.textarea-control {
 }
 
 .icon-user {
-  background-image: url(../imgs/page/contact/user.svg);
+  background-image: url(../imgs/contact/user.svg);
   background-repeat: no-repeat;
   background-position: right 15px center;
   padding-right: 40px;
 }
 
 .icon-email {
-  background-image: url(../imgs/page/contact/email.svg);
+  background-image: url(../imgs/contact/email.svg);
   background-repeat: no-repeat;
   background-position: right 15px center;
   padding-right: 40px;
 }
 
 .icon-phone {
-  background-image: url(../imgs/page/contact/phone.svg);
+  background-image: url(../imgs/contact/phone.svg);
   background-repeat: no-repeat;
   background-position: right 15px center;
   padding-right: 40px;
 }
 
 .icon-company {
-  background-image: url(../imgs/page/contact/company.svg);
+  background-image: url(../imgs/contact/company.svg);
   background-repeat: no-repeat;
   background-position: right 15px center;
   padding-right: 40px;

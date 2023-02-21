@@ -42,7 +42,7 @@ if (empty($_GET)) {
             include 'about.php';
             break;
         case "contact":
-            include 'contact.php';
+            include 'contact-us/contact.php';
             break;
         default:
             include 'errors/404.php';
