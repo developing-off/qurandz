@@ -2,6 +2,11 @@
 $base_url = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . '/';
 require_once('function/HijriDate/hijri.class.php');
 $formatter = new IntlDateFormatter('ar_DZ', IntlDateFormatter::NONE, IntlDateFormatter::NONE, 'Africa/Algiers', IntlDateFormatter::GREGORIAN, "EEEE d MMMM y");
+
+if (isset($_GET['fbclid'])) {
+    include 'home.php';
+    exit;
+}
 if (empty($_GET)) {
     include 'home.php';
 } else {
@@ -37,6 +42,9 @@ if (empty($_GET)) {
             break;
         case "asmaa":
             include 'asmaa-husna/asmaa.php';
+            break;
+        case "adkar":
+            include 'adkars/adkar.php';
             break;
         case "about":
             include 'about.php';

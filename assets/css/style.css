@@ -3079,7 +3079,13 @@ body {
   display: block;
   visibility: visible;
 }
-
+.adkar-image {
+  background-image: url(../imgs/background/hadith.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: .5s;
+}
 .dropdown-account {
   width: 200px;
   right: 0;

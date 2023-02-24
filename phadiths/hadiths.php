@@ -30,27 +30,37 @@ require_once('function/hadith/get_collection_all.php');
   <?php require('partials/_header.php') ?>
   <!-- main -->
   <main class="main">
+    <section class="section bg-7 adkar-image">
+      <div class="container">
+        <div class="banner-shop-grid">
+          <h2 class="color-brand-2 mt-15 mb-60 font-bold-800">أحاديث الرسول صلى الله عليه وسلم <br
+              class="d-none d-lg-block">بين يديك
+            والمساء</h2>
+        </div>
+      </div>
+    </section>
     <section class="section mt-100">
       <div class="container">
         <div class="row">
-        <div class="row text-center">
-                        <div class="col-lg-12 col-md-12">
-                            <h2 class="color-brand-1 mb-20">أحاديث الرسول صلى الله عليه وسلم بين يديك</h2>
-                        </div>
+          <?php foreach ($collections as $collection) { ?>
+            <div class="col-lg-6 col-md-4 col-sm-6 col-12">
+              <a href="hadiths/<?= $collection->name ?>">
+                <div class="card-small">
+                  <div class="card-image">
+                    <div class="box-image">
+                      <h6 class="color-brand-1 icon-up" dir="ltr">
+                        <?= $collection->collection[1]->title ?>
+                      </h6>
                     </div>
-        <?php foreach ($collections as $collection) { ?>
-          <div class="col-lg-6 col-md-4 col-sm-6 col-12">
-            <a href="hadiths/<?= $collection->name ?>">
-              <div class="card-small">
-                <div class="card-image">
-                  <div class="box-image"><h6 class="color-brand-1 icon-up" dir="ltr"><?= $collection->collection[1]->title ?></h6></div>
+                  </div>
+                  <div class="card-info">
+                    <h6 class="color-brand-1 icon-up" dir="ltr">
+                      <?= $collection->collection[0]->title ?>
+                    </h6>
+                  </div>
                 </div>
-                <div class="card-info">
-                  <h6 class="color-brand-1 icon-up" dir="ltr"><?= $collection->collection[0]->title ?></h6>
-                </div>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
           <?php } ?>
         </div>
       </div>
