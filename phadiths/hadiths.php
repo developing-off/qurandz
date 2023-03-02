@@ -35,7 +35,7 @@ require_once('function/hadith/get_collection_all.php');
         <div class="banner-shop-grid">
           <h2 class="color-brand-2 mt-15 mb-60 font-bold-800">أحاديث الرسول صلى الله عليه وسلم <br
               class="d-none d-lg-block">بين يديك
-            والمساء</h2>
+            </h2>
         </div>
       </div>
     </section>
